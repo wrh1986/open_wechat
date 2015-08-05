@@ -1,0 +1,109 @@
+package com.tomato.wechat.user;
+
+import java.util.List;
+
+/**
+ * Created by wangronghua on 14-3-20.
+ */
+public class UserInfo {
+  private int subscribe;
+  private String openid;
+  private String nickname;
+  private int sex;
+  private String language;
+  private String city;
+  private String province;
+  private String country;
+  private long subscribe_time;
+  private String headimgurl;
+  private List privilege;
+
+  public String getHeadimgurl() {
+    return headimgurl;
+  }
+
+  public void setHeadimgurl(String headimgurl) {
+    this.headimgurl = headimgurl;
+  }
+
+  public int getSubscribe() {
+    return subscribe;
+  }
+
+  public void setSubscribe(int subscribe) {
+    this.subscribe = subscribe;
+  }
+
+  public String getOpenid() {
+    return openid;
+  }
+
+  public void setOpenid(String openid) {
+    this.openid = openid;
+  }
+
+  public String getNickname() {
+    return nickname;
+  }
+
+  public void setNickname(String nickname) {
+    this.nickname = nickname;
+  }
+
+  public int getSex() {
+    return sex;
+  }
+
+  public void setSex(int sex) {
+    this.sex = sex;
+  }
+
+  public String getLanguage() {
+    return language;
+  }
+
+  public void setLanguage(String language) {
+    this.language = language;
+  }
+
+  public String getCity() {
+    return city;
+  }
+
+  public void setCity(String city) {
+    this.city = city;
+  }
+
+  public String getProvince() {
+    return province;
+  }
+
+  public void setProvince(String province) {
+    this.province = province;
+  }
+
+  public String getCountry() {
+    return country;
+  }
+
+  public void setCountry(String country) {
+    this.country = country;
+  }
+
+  public long getSubscribe_time() {
+    return subscribe_time;
+  }
+
+  public void setSubscribe_time(long subscribe_time) {
+    this.subscribe_time = subscribe_time;
+  }
+
+  public List getPrivilege() {
+    return privilege;
+  }
+
+  public void setPrivilege(List privilege) {
+    this.privilege = privilege;
+  }
+
+}
