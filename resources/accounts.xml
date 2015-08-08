@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<accounts>
+    <account>
+        <appId>testapp1</appId>
+        <appSecret>secret</appSecret>
+        <appToken>test</appToken>
+        <domainName>http://localhost/wechat</domainName>
+    </account>
+    <account>
+        <appId>testapp2</appId>
+        <appSecret>secret</appSecret>
+        <appToken>test</appToken>
+        <domainName>http://localhost/wechat</domainName>
+    </account>
+</accounts>

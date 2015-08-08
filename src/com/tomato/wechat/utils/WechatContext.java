@@ -37,20 +37,4 @@ public class WechatContext {
         this.wechatAccount = wechatAccount;
     }
 
-
-    public static void init() {
-//        MessageBus.get().addHandler(new SubscribeEventHandler());
-//        MessageBus.get().addHandler(new UnSubscriberEventHandler());
-//        MessageBus.get().addHandler(new LocationEventHandler());
-    }
-
-    public static String getWelcomeMsg() {
-        String result = "欢迎使用wechat服务平台!";
-//    SystemSettingBean bean = ssb.getLeaf();
-//    if(null != bean) {
-//      result = bean.getWelcomeMsg();
-//    }
-        return result;
-    }
-
 }

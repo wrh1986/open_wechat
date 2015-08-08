@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<components>
+    <component>product.ProductPlugin</component>
+    <component>com.test.Component2</component>
+    <component>com.test.Component3</component>
+</components>

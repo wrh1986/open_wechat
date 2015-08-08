@@ -1,6 +1,6 @@
 package com.tomato.wechat;
 
-import com.tomato.base.component.ComponentLoader;
+import com.tomato.base.loader.ComponentLoader;
 import com.tomato.base.message.HandlerManager;
 import com.tomato.base.message.MessageService;
 import com.tomato.wechat.request.*;

@@ -44,4 +44,15 @@ public class WechatAccountManager {
             domainMap.put(account.getDomainName(), account);
         }
     }
+
+    public void removeAccount(WechatAccount account) {
+        if(null != account && StringUtils.isNotEmpty(account.getAppId())) {
+            accountMap.remove(account.getAppId());
+        }
+
+        if(null != account && StringUtils.isNotEmpty(account.getDomainName())) {
+            domainMap.remove(account.getDomainName());
+        }
+    }
+
 }

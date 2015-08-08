@@ -1,6 +1,8 @@
 package com.tomato.wechat;
 
 import com.tomato.base.account.WechatAccountManager;
+import com.tomato.base.loader.ComponentLoader;
+import com.tomato.base.loader.WechatAccountLoader;
 import com.tomato.wechat.account.WechatAccount;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -29,7 +31,11 @@ public class WechatServlet extends HttpServlet {
     protected final static Logger LOG = LoggerFactory.getLogger(WechatServlet.class);
 
     public void init() throws ServletException {
-        WechatContext.init();
+        ComponentLoader defaultComponentLoader = new ComponentLoader();
+        defaultComponentLoader.load();
+
+        WechatAccountLoader defaultAccountLoader = new WechatAccountLoader();
+        defaultAccountLoader.load();
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

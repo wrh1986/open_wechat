@@ -10,7 +10,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Wechat</servlet-name>
-        <url-pattern>/com.tomato.wechat</url-pattern>
+        <url-pattern>/wechat</url-pattern>
     </servlet-mapping>
     
     <welcome-file-list>

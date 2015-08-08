@@ -32,27 +32,39 @@ public class ConsumerDispatcher{
     public void consume(BaseMessage message) throws Exception {
         if (message instanceof SubscribeEvent) {
             for(SubscriberEventConsumer consumer : subscriberEventConsumers) {
-                consumer.consume((SubscribeEvent)message);
+                if(message.getContext().getWechatAccount().isComponentEnabled(consumer.getComponent())) {
+                    consumer.consume((SubscribeEvent)message);
+                }
             }
         } else if(message instanceof UnSubscribeEvent) {
             for(UnsubscriberEventConsumer consumer : unsubscriberEventConsumers) {
-                consumer.consume((UnSubscribeEvent) message);
+                if(message.getContext().getWechatAccount().isComponentEnabled(consumer.getComponent())) {
+                    consumer.consume((UnSubscribeEvent) message);
+                }
             }
         } else if(message instanceof TextRequest) {
             for(TextMessageConsumer consumer : textMessageConsumers) {
-                consumer.consume((TextRequest) message);
+                if(message.getContext().getWechatAccount().isComponentEnabled(consumer.getComponent())) {
+                    consumer.consume((TextRequest) message);
+                }
             }
         } else if(message instanceof VoiceRequest) {
             for(VoiceMessageConsumer consumer : voiceMessageConsumers) {
-                consumer.consume((VoiceRequest) message);
+                if(message.getContext().getWechatAccount().isComponentEnabled(consumer.getComponent())) {
+                    consumer.consume((VoiceRequest) message);
+                }
             }
         } else if(message instanceof ImageRequest) {
             for(ImageMessageConsumer consumer : imageMessageConsumers) {
-                consumer.consume((ImageRequest) message);
+                if(message.getContext().getWechatAccount().isComponentEnabled(consumer.getComponent())) {
+                    consumer.consume((ImageRequest) message);
+                }
             }
         } else if(message instanceof LocationEvent) {
             for(LocationEventConsumer consumer : locationEventConsumers) {
-                consumer.consume((LocationEvent) message);
+                if(message.getContext().getWechatAccount().isComponentEnabled(consumer.getComponent())) {
+                    consumer.consume((LocationEvent) message);
+                }
             }
         }
     }
