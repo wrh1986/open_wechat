@@ -15,25 +15,7 @@ import java.util.List;
 public class TestWechatAccountSerialization {
 
     public static void main(String[] args) {
-        List<WechatAccount> list = new ArrayList<>();
-        Accounts accounts = new Accounts();
-        WechatAccount account = new WechatAccount();
-        account.setAppId("testapp");
-        account.setDomainName("http://localhost/wechat");
-        account.setAppToken("test");
-        account.setAppSecret("secret");
 
-        list.add(account) ;
-        accounts.setWechatAccountList(list);
-//        System.out.println(toXML(accounts));
-
-        ComponentLoader loader = new ComponentLoader();
-        List<String> components = new ArrayList<>();
-        components.add("com.test.Component1");
-        components.add("com.test.Component2");
-        components.add("com.test.Component3");
-        loader.setComponents(components);
-        System.out.println(toXML(loader));
     }
 
     public static String toXML(Object obj) {
