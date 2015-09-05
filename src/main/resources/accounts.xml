@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<accounts>
+    <account>
+        <appId>wxd65ab268276cdb60</appId>
+        <appSecret>ca49d4756ae9f4082fa2de935547cd35</appSecret>
+        <appToken>wangronghua</appToken>
+        <domainName>http://218.244.131.8/wechat/1</domainName>
+        <webBaseUrl>http://218.244.131.8/1</webBaseUrl>
+    </account>
+    <!--<account>-->
+        <!--<appId>testapp2</appId>-->
+        <!--<appSecret>secret</appSecret>-->
+        <!--<appToken>test</appToken>-->
+        <!--<domainName>http://localhost/wechat/11</domainName>-->
+        <!--<webBaseUrl>http://218.244.131.8/11</webBaseUrl>-->
+    <!--</account>-->
+</accounts>
