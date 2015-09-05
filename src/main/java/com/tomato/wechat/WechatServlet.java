@@ -31,6 +31,7 @@ public class WechatServlet extends HttpServlet {
     protected final static Logger LOG = LoggerFactory.getLogger(WechatServlet.class);
 
     public void init() throws ServletException {
+        System.out.println("init wechat servlet...");
         //TODO
 
         /*

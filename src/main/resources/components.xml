@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <components>
-    <component>com.tomato.product.ProductPlugin</component>
-    <component>com.tomato.rushhour.Test2Plugin</component>
+    <component>com.tomato.component1.ProductPlugin</component>
+    <component>com.tomato.component2.Test2Plugin</component>
 </components>

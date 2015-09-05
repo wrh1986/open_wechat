@@ -1,4 +1,4 @@
-package com.tomato.rushhour;
+package com.tomato.component2;
 
 import com.tomato.base.component.AbstractComponent;
 

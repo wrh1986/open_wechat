@@ -18,6 +18,7 @@
     <servlet>
         <servlet-name>Wechat</servlet-name>
         <servlet-class>com.tomato.wechat.WechatServlet</servlet-class>
+        <load-on-startup>-1</load-on-startup>
     </servlet>
 
     <!-- Spring MVC -->

@@ -1,6 +1,9 @@
-package com.tomato.product;
+package com.tomato.component1;
 
 import com.tomato.base.component.AbstractComponent;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by wangronghua on 15/8/2.
@@ -17,6 +20,10 @@ public class ProductPlugin extends AbstractComponent {
         return "商品";
     }
 
+    public void getMenus() {
+
+    }
+
     @Override
     public void init() {
 //        super.addConsumer(new TestTextMessageConsumer());
@@ -24,4 +31,8 @@ public class ProductPlugin extends AbstractComponent {
         super.addHandler(new TestTextMessageHandler());
     }
 
+    public List<String> getManagedUrl(){
+        List<String> result = new ArrayList<>();
+        return result;
+    }
 }

@@ -1,5 +1,6 @@
 package com.tomato.web.controller;
 
+import com.tomato.web.model.WechatObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,9 +19,9 @@ public class TestController {
 
     @RequestMapping(value = "/test")
     @ResponseBody
-    public String test(@RequestParam String code, @PathVariable String wechatid, HttpServletRequest request) {
-        System.out.println("code : " + code);
-        System.out.println("openid : " + request.getAttribute("openId"));
-        return "openid : " + request.getAttribute("openId");
+    public String test(@RequestParam String code, WechatObject wechat, HttpServletRequest request) {
+        System.out.println("code : " + wechat.getOpenID());
+        System.out.println("openid : " + wechat.getOpenID());
+        return "openid : " + wechat.getOpenID();
     }
 }

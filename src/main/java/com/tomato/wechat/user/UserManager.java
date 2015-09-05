@@ -10,8 +10,8 @@ import com.tomato.wechat.utils.URLManager;
 /**
  * Created by wangronghua on 14-3-20.
  */
-public class UerManager {
-  protected final static Logger LOG = LoggerFactory.getLogger(UerManager.class);
+public class UserManager {
+  protected final static Logger LOG = LoggerFactory.getLogger(UserManager.class);
 
   public static UserInfo getUserInfo(String accessToken, String openID) {
     UserInfo info = null;

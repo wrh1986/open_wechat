@@ -1,6 +1,8 @@
 package com.tomato.web.interceptor;
 
 import com.tomato.base.account.WechatAccountManager;
+import com.tomato.web.model.WechatObject;
+import com.tomato.web.utils.Constants;
 import com.tomato.wechat.access.AccessToken;
 import com.tomato.wechat.access.AccessTokenManager;
 import com.tomato.wechat.account.WechatAccount;
@@ -40,7 +42,10 @@ public class WechatInteceptor implements HandlerInterceptor{
             }
         }
 
-        request.setAttribute("openId", openId);
+        WechatObject wechatObject = new WechatObject();
+        wechatObject.setOpenID(openId);
+        wechatObject.setAccount(curAccount);
+        request.setAttribute(Constants.WECHAT_OBJECT_ATTR_NAME, wechatObject);
         return true;
     }
 

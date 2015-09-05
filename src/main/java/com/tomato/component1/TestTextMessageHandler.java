@@ -1,4 +1,4 @@
-package com.tomato.product;
+package com.tomato.component1;
 
 import com.tomato.base.message.handler.MessageHandler;
 import com.tomato.wechat.BaseMessage;
